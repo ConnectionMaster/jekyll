@@ -25,6 +25,8 @@ AllCops:
     - vendor/**/*
     - tmp/**/*
 
+Gemspec/DateAssignment:
+  Enabled: true
 Layout/BeginEndAlignment:
   Enabled: true
 Layout/EmptyComment:
@@ -109,6 +111,10 @@ Lint/NestedPercentLiteral:
     - test/test_site.rb
 Lint/NoReturnInBeginEndBlocks:
   Enabled: true
+Lint/NumberedParameterAssignment:
+  Enabled: true
+Lint/OrAssignmentToConstant:
+  Enabled: true
 Lint/OutOfRangeRegexpRef:
   Enabled: true
 Lint/RaiseException:
@@ -121,11 +127,15 @@ Lint/SelfAssignment:
   Enabled: true
 Lint/StructNewOverride:
   Enabled: true
+Lint/SymbolConversion:
+  Enabled: true
 Lint/ToEnumArguments:
   Enabled: false
 Lint/TopLevelReturnWithArgument:
   Enabled: true
 Lint/TrailingCommaInAttributeDeclaration:
+  Enabled: true
+Lint/TripleQuotes:
   Enabled: true
 Lint/UnexpectedBlockArity:
   Enabled: true
@@ -203,6 +213,8 @@ Minitest/RefutePathExists:
   Enabled: true
 Minitest/UnspecifiedException:
   Enabled: true
+Minitest/AssertEmptyLiteral:
+  Enabled: false
 
 Naming/FileName:
   Enabled: false
@@ -274,6 +286,8 @@ Style/BisectedAttrAccessor:
   Enabled: true
 Style/CaseLikeIf:
   Enabled: true
+Style/StringChars:
+  Enabled: true
 Style/ClassAndModuleChildren:
   Exclude:
     - test/**/*.rb
@@ -308,6 +322,8 @@ Style/GuardClause:
   Enabled: false
 Style/HashAsLastArrayItem:
   Enabled: true
+Style/HashConversion:
+  Enabled: true  
 Style/HashEachMethods:
   Enabled: true
 Style/HashExcept:
@@ -320,6 +336,8 @@ Style/HashSyntax:
 Style/HashTransformKeys:
   Enabled: false
 Style/HashTransformValues:
+  Enabled: true
+Style/IfWithBooleanLiteralBranches:
   Enabled: true
 Style/KeywordParametersOrder:
   Enabled: true
